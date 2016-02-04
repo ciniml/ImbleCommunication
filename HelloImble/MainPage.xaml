@@ -33,9 +33,15 @@
                             <ColumnDefinition Width="100"/>
                         </Grid.ColumnDefinitions>
 
-                        <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="{Binding Device.Advertisement.LocalName}"/>
-                        <TextBlock Grid.Row="1" Grid.Column="0" Text="{Binding Device.Address}"/>
-                        <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding Device.Rssi}"/>
+                        <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="{Binding Name}"/>
+                        <TextBlock Grid.Row="1" Grid.Column="0" Margin="2,1">
+                            <Run Text="Address: "/>
+                            <Run Text="{Binding Address}" />
+                        </TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="1" Margin="4,1,2,1">
+                            <Run Text="RSSI: "/>
+                            <Run Text="{Binding Rssi}" />
+                        </TextBlock>
                         <Button Grid.Row="0" Grid.RowSpan="2" Grid.Column="2" Content="Connect" Click="ConnectButton_Click">
                             <!--<interactivity:Interaction.Behaviors>
                                 <core:EventTriggerBehavior EventName="Click">

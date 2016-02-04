@@ -15,6 +15,24 @@ A library to communicate with IMBLE Bluetooth Low Energy radio module.
 
 This project also includes a sample code to send/receive strings to/from IMBLE devices.
 
+## Screenshots
+
+- Select an IMBLE device to connect.
+
+![SelectDevice](image/SelectDevice.png)
+
+- Pair with an IMBLE device.
+
+![PairWithDevice](image/PairWithDevice.png)
+
+- Sending data from IMBLE (from USB-UART adapter)
+
+![SendDataIMBLE](image/SendDataIMBLE.png)
+
+- Showing the received data.
+
+![ReceiveData](image/ReceiveData.png)
+
 ## Dependencies
 
 The ImbleCommunication library depends on these libraries listed below:

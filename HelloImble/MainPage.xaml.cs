@@ -29,8 +29,8 @@ namespace HelloImble
 
         private void ConnectButton_Click(object sender, RoutedEventArgs e)
         {
-            var vm = ((Button) sender).DataContext as UnconnectedDeviceViewModel;
-            this.Frame.Navigate(typeof (DevicePage), vm.Device);
+            var vm = ((Button)sender).DataContext as UnconnectedDeviceViewModel;
+            this.Frame.Navigate(typeof(DevicePage), vm.Device);
         }
     }
 }
