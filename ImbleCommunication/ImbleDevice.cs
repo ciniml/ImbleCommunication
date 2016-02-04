@@ -163,7 +163,7 @@ namespace ImbleCommunication
         {
             if (deviceInformation.Pairing.IsPaired)
             {
-                // If the device is paired, all we hoave to do is just getting BluetoothLEDevice object by its ID.
+                // If the device is paired, all we have to do is just getting BluetoothLEDevice object by its ID.
                 this.bleDevice = (await BluetoothLEDevice.FromIdAsync(deviceInformation.Id)).AddTo(this.disposables);
                 this.service = this.bleDevice.GetGattService(ServiceUuid).AddTo(this.disposables);
             }
