@@ -23,15 +23,15 @@ This project also includes a sample code to send/receive strings to/from IMBLE d
 
 - Pair with an IMBLE device.
 
-![PairWithDevice](image/PairWithDevice.png)
+![PairWithDevice](image/PairWithDevice.PNG)
 
 - Sending data from IMBLE (from USB-UART adapter)
 
-![SendDataIMBLE](image/SendDataIMBLE.png)
+![SendDataIMBLE](image/SendDataIMBLE.PNG)
 
 - Showing the received data.
 
-![ReceiveData](image/ReceiveData.png)
+![ReceiveData](image/ReceiveData.PNG)
 
 ## Dependencies
 
